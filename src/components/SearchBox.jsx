@@ -11,7 +11,7 @@ export default function SearchBox({
 
       {/* Result Title */}
       <div className="result-title">
-        Result - B.E. / B.E. (PTDC) / B.Tech. / B.Design.
+       Result - B.Pharmacy/B.Pharmacy(PCI)
       </div>
 
       {/* Search Table */}
