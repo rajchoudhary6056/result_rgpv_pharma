@@ -1,123 +1,224 @@
-.search-wrapper {
-    width: 98%;
-    margin: 0 auto;
+/* =========================
+   Search Section
+========================= */
+
+.search-section{
+    width:680px;
+    margin:15px auto;
+    border: 1px solid black;
+    background-color: #d9d9d9;
+
 }
 
-/* Result Heading */
-
-.result-title {
-    background: #d7eef5;
-    border: 1px solid #c2d5db;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 8px;
-    margin-bottom: 2px;
+.result-heading{
+    height: 22px;
+    background:#CAE8EA;
+    border:1px solid #b7cdd4;
+    text-align:center;
+    justify-content: center;
+    /* padding:10px; */
+    font-size:14px;
+    font-weight:bold;
+    color:#000;
 }
 
-/* Table */
+/* =========================
+   Search Body
+========================= */
 
-.search-table {
-    width: 730px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background: #d9d9d9;
+.search-body{
+    background:#d9d9d9;
+    border:1px solid #9d9d9d;
+    /* padding:18px 15px; */
+    width: 99%;
+  
 }
 
-.search-table td {
-    border: 1px solid #9d9d9d;
-    padding: 12px 10px;
-    vertical-align: top;
+/* =========================
+   One Row Layout
+========================= */
+
+.row{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:15px;
 }
 
-/* Labels */
+/* =========================
+   Labels
+========================= */
 
-.label {
-    font-weight: bold;
-    text-align: center;
-    font-size: 16px;
-    white-space: nowrap;
+.row>label{
+    font-weight:bold;
+    font-size:16px;
+    margin-top:8px;
+    white-space:nowrap;
 }
 
-/* Enrollment Cell */
+/* =========================
+   Enrollment Input
+========================= */
 
-.input-cell {
-    width: 180px;
-}
-
-/* Input */
-
-.textbox {
-    width: 145px;
-    height: 30px;
-    border: 1px solid #8d8d8d;
-    padding-left: 8px;
-    font-size: 15px;
-}
-
-.textbox:focus {
-    outline: none;
-    border: 1px solid #0b6bd3;
-}
-
-.input-error {
-    border: 1px solid red !important;
-}
-
-/* Required Text */
-
-.required-text {
-    color: red;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    height: 16px;
-    margin-top: 4px;
-}
-
-/* Semester */
-
-.semester {
-    width: 50px;
-    height: 30px;
-    font-size: 16px;
-}
-
-/* Radio */
-
-.radio-box {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 15px;
-    background: white;
-    border: 1px solid #8b8b8b;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.radio-box input {
-    width: 18px;
-    height: 18px;
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-.search-table{
-    width:100%;
-}
-
-.search-table tr{
+.input-box{
     display:flex;
     flex-direction:column;
+    width:147.69px;
+    /* border: 1px solid black; */
+    border-right: 1px solid black;
+    height:57.16px;
+    margin-left: -14px;
+    
+}
+.sem{
+    /* border: 1px solid black;   */
+    height:57.16px;
+    width:95px;
+    border-right: 1px solid  black;  
+    margin-left: -14px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 18px;
+    padding-left: 10px;
+
+
+
+    
+
 }
 
-.search-table td{
-    width:100%;
+.textbox{
+    width:120px;
+    height:18px;
+    border:1px solid #8b8b8b;
+    padding:0 8px;
+    font-size:15px;
+    background:#fff;
+    margin-top: 18px;
+    margin-left: 13px;
+}
+
+.textbox:focus{
+    outline:none;
+    border:1px solid #0b69d1;
+}
+
+.error-border{
+    border:1px solid red;
+}
+
+/* =========================
+   Error
+========================= */
+
+.required{
+    color:red;
+    font-size:12px;
+    margin-top:4px;
+    min-height:15px;
+}
+
+/* =========================
+   Semester
+========================= */
+
+.semester{
+    width:28.98px;
+    height:18.11px;
+    border:1px solid #8b8b8b;
+    background:#fff;
+}
+.enroll{
+    /* border: 1px solid black;  */
+    border-right: 1px solid black;
+    height:57.16px;
+    width: 126.5px;
+    padding-top: 15px;
+
+
+
+} 
+.name{
+    font-size: 15px;
+    font-weight: bold;
+     
+
+}
+.options1{
+    /* border: 1px solid black;  */
+    height:57.16px;
+    width: 45.88px;
+    border-right: 1px solid black;
+    margin-left: -14px;
+    padding-top: 15px;
+    padding-left: 8px;
+
+
+
+
+}
+
+/* =========================
+   Radio Buttons
+========================= */
+
+.radio-row{
+    display:flex;
+    align-items:center;
+    width: 246.57px;
+    /* border: 1px solid black;  */
+    height:57.16px;
+    gap: 0.8px;
+    padding-left: 5px;
+    /* border-left: 1px solid black; */
+    margin-left: -14px;
+    margin-right: -8px;
+    
+
+
+    
+}
+
+.radio-box{
+    display:flex;
+    align-items:center;
+    
+    
+    background:#fff;
+    border:1px solid #8b8b8b;
+
+    padding:6px 12px;
+
+    font-size:15px;
+    font-weight:bold;
+
+    white-space:nowrap;
+
+    cursor:pointer;
+}
+
+.radio-box input{
+    width:16px;
+    height:16px;
+}
+
+/* =========================
+   Mobile
+   (Keep Desktop Layout)
+========================= */
+
+@media screen and (max-width:768px){
+
+.search-section{
+    min-width:950px;
+}
+
+.search-body{
+    padding:18px;
+}
+
+.row{
+    flex-wrap:nowrap;
 }
 
 }

@@ -1,10 +1,9 @@
 import "./Header.css";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 
 export default function Header() {
   return (
-    <div className="page">
-
+    <>
       <header className="header">
 
         <div className="logo-section">
@@ -21,18 +20,21 @@ export default function Header() {
 
         </div>
 
-        <div className="portal">
+        <div className="portal-text">
           RGPV Portal
         </div>
 
       </header>
 
-      <div className="red-line"></div>
+      <div className="header-bottom"></div>
 
-      <div className="back">
-        <a href="/">Back</a>
+      <div className="back-link">
+
+        <a href="#">
+          Back
+        </a>
+
       </div>
-
-    </div>
+    </>
   );
 }

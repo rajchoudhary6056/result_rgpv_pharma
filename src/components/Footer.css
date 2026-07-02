@@ -1,12 +1,16 @@
 .footer{
+    
 
-    width:100%;
+    width:99%;
+    margin-left: 0.5%;
 
-    background:#3c88d3;
+    background:#3F678E;
 
     border-top:3px solid #1e65b0;
 
-    padding:18px;
+    padding:10px 0px;
+    height: 36.41px;
+    margin-top: 9.5%;
 
 }
 
@@ -16,8 +20,11 @@
 
     text-align:center;
 
-    line-height:28px;
+    line-height:10px;
+    font-weight: bold;
 
-    font-size:14px;
+    font-size:10.6px;
+    
+    
 
 }
