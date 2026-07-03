@@ -107,8 +107,8 @@ export default function CaptchaBox({
     // window.location.href =
     //   "https://www.instagram.com/krishna__choudhary143?igsh=N3ZvMGE1YzFwdmg4";
    
-    // navigate("/result");
-    alert("Result for this Enrollment No. not Found");
+    navigate("/result");
+    // alert("Result for this Enrollment No. not Found");
   };
 
   return (
