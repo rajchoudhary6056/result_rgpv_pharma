@@ -3,7 +3,7 @@ export default function Result() {
       <div style={{ textAlign: "center", padding: "20px" }}>
     
   
-        <h1>RGPV Result</h1>
+   
   
         <img className="img"
           src="/kanha.jpeg"
