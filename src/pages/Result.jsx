@@ -9,10 +9,10 @@ export default function Result() {
           src="/kanha.jpeg"
           alt="Result"
           style={{
-            width: "100%",
+            width: "500px",
             maxWidth: "1000px",
-            // border: "1px solid #ccc",
-            // height:"100%"
+            border: "1px solid #ccc",
+            height:"500px"
           }}
         />
 
