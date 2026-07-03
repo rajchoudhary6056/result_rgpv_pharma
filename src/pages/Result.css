@@ -9,47 +9,45 @@ body,
 #root{
     width:100%;
     height:100%;
-    overflow:hidden;
     background:#d9dde5;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.result-page{
-    position:fixed;
-    top:0;
-    left:0;
+/* Main Page */
 
-    width:100vw;
-    height:100vh;
+.result-page{
+
+    width:100%;
+
+    min-height:100vh;
 
     display:flex;
+
     justify-content:center;
+
     align-items:flex-start;
 
-    background:#d9dde5;
+    padding:15px 0;
 
-    padding:15px;
+    overflow:auto;
+
 }
 
-/* Result Paper */
+/* Fixed Result Paper */
 
 .paper{
 
-    width:min(700px,90vw);
+    width:700px;
 
-    height:95vh;
+    min-width:700px;
 
     background:#fff;
 
     border:1px solid #bdbdbd;
 
-    box-shadow:0 0 10px rgba(0,0,0,.2);
+    box-shadow:0 0 10px rgba(0,0,0,.18);
 
-    overflow:hidden;
-
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
+    padding:10px;
 
 }
 
@@ -59,10 +57,30 @@ body,
 
     width:100%;
 
-    height:100%;
-
-    object-fit:contain;
+    height:auto;
 
     display:block;
+
+}
+
+/* Scrollbar */
+
+.result-page::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+.result-page::-webkit-scrollbar-thumb{
+
+    background:#888;
+
+}
+
+.result-page::-webkit-scrollbar-track{
+
+    background:#eee;
 
 }
