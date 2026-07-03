@@ -1,5 +1,8 @@
 import "./CaptchaBox.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 
 export default function CaptchaBox({
   enrollment,
@@ -9,6 +12,7 @@ export default function CaptchaBox({
   const [captcha, setCaptcha] = useState("");
   const [captchaInput, setCaptchaInput] = useState("");
   const [captchaError, setCaptchaError] = useState("");
+  const navigate = useNavigate();
 
   // Generate Random Captcha
   const generateCaptcha = () => {
@@ -50,15 +54,15 @@ export default function CaptchaBox({
 
     }
 
-    if (enrollment.length < 12) {
+    // if (enrollment.length < 12) {
 
-      setError("Enrollment Number must be minimum 12 characters");
+    //   setError("Enrollment Number must be minimum 12 characters");
 
-      generateCaptcha();
+    //   generateCaptcha();
 
-      return;
+    //   return;
 
-    }
+    // }
 
     setError("");
 
@@ -74,23 +78,36 @@ export default function CaptchaBox({
 
     }
 
-    if (
-      captchaInput.toUpperCase() !== captcha
-    ) {
+    // if (
+    //   captchaInput.toUpperCase() !== captcha
+    // ) {
 
-      setCaptchaError("Invalid Captcha");
+    //   setCaptchaError("Invalid Captcha");
 
-      generateCaptcha();
+    //   generateCaptcha();
 
-      return;
+    //   return;
 
-    }
+    // }
+    //raj
+
+  if (captchaInput.toUpperCase() !== captcha) {
+  Swal.fire({
+    icon: "error",
+    title: "Invalid CAPTCHA",
+    text: "Please enter the correct CAPTCHA.",
+    confirmButtonText: "OK",
+  });
+  return;
+}
 
     setCaptchaError("");
 
     // Redirect
-    window.location.href =
-      "https://www.instagram.com/krishna__choudhary143?igsh=N3ZvMGE1YzFwdmg4";
+    // window.location.href =
+    //   "https://www.instagram.com/krishna__choudhary143?igsh=N3ZvMGE1YzFwdmg4";
+   
+    navigate("/result");
   };
 
   return (
