@@ -1,6 +1,6 @@
 export default function Result() {
     return (
-      <div style={{ textAlign: "center", padding: "20px" }}>
+      <div style={{ textAlign: "", padding: "0px" }}>
     
   
    
@@ -11,8 +11,8 @@ export default function Result() {
           style={{
             width: "100%",
             maxWidth: "1000px",
-            border: "1px solid #ccc",
-            height:"800px"
+            // border: "1px solid #ccc",
+            // height:"100%"
           }}
         />
 
